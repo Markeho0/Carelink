@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; background-color: #f9f9f9; }
+    .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    h1 { text-align: center; color: #4caf50; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    input, select, textarea { 
+      width: 100%; 
+      padding: 10px; 
+      border: 1px solid #ddd; 
+      border-radius: 5px; 
+      font-size: 14px; 
+    }
+    .button-group {
+      display: flex; 
+      gap: 10px; 
+      justify-content: space-between; /* Adjust alignment */
+    }
+    a.cancel-btn, a.donate-btn { 
+      display: inline-block;
+      text-decoration: none; /* Remove underline */
+      padding: 10px 20px; 
+      font-size: 16px; 
+      border-radius: 5px; 
+      text-align: center; 
+      color: white; 
+    }
+    a.cancel-btn { 
+      background-color: #af4c4c; 
+    }
+    a.cancel-btn:hover { 
+      background-color: #a33d3d; 
+    }
+    a.donate-btn { 
+      background-color: #4caf50; 
+    }
+    a.donate-btn:hover { 
+      background-color: #45a049; 
+    }
+    /* Modal styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; 
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      text-align: center;
+    }
+    .modal h2 {
+      color: #4caf50;
+    }
+    .modal button {
+      margin-top: 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .modal button:hover {
+      background-color: #45a049;
+    }
+    /* Overlay for modal */
+    .overlay {
+      display: none; /* Hidden by default */
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      background: rgba(0, 0, 0, 0.5); 
+      z-index: 999;
+    }
+    /* Payment method selection */
+    .payment-method-group { margin-top: 20px; }
+    .payment-method-group label { font-weight: normal; }
+    .payment-details { display: none; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Donate to Make a Difference</h1>
+    <form id="donationForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+        <label for="cause">Select a Cause</label>
+        <select id="cause" name="cause" required>
+          <option value="education">Education</option>
+          <option value="environment">Environment</option>
+          <option value="disaster-relief">Disaster Relief</option>
+          <option value="animal-welfare">Animal Welfare</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="amount">Donation Amount</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter amount in PHP" required>
+      </div>
+      
+      <!-- Payment method selection -->
+      <div class="payment-method-group">
+        <label>Select Payment Method</label>
+        <input type="radio" id="bank" name="payment-method" value="bank" onclick="showPaymentDetails()"> Bank
+        <input type="radio" id="e-money" name="payment-method" value="e-money" onclick="showPaymentDetails()"> E-Money
+      </div>
+
+      <br>
+
+      <!-- Bank or E-Money details input (hidden initially) -->
+      <div class="payment-details" id="paymentDetails">
+        <div class="form-group">
+          <label for="payment-details">Enter Bank / E-Money Account Details</label>
+          <textarea id="payment-details" name="payment-details" rows="4" placeholder="Enter your bank or e-money details here" required></textarea>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <a href="index.html" class="cancel-btn">Cancel</a>
+        <a href="#" class="donate-btn" onclick="showSuccessModal()">Donate Now</a>
+      </div>
+    </form>
+  </div>
+
+  <!-- Modal for Success Message -->
+  <div class="overlay" id="overlay"></div>
+  <div class="modal" id="successModal">
+    <h2>Thank You!</h2>
+    <p>Your donation has been successfully processed.</p>
+    <button onclick="returnToHome()">Return Home</button>
+  </div>
+
+  <script>
+    function showPaymentDetails() {
+      const paymentDetailsDiv = document.getElementById('paymentDetails');
+      paymentDetailsDiv.style.display = 'block'; // Show the payment details section
+    }
+
+    function showSuccessModal() {
+      // Prevent default form submission
+      event.preventDefault();
+
+      // Show the modal and overlay
+      document.getElementById('successModal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    function returnToHome() {
+      // Redirect to the main page
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

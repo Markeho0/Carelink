@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareLink - Extend a Hand, Change a Life</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">CareLink</a>
+      </h1>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">CareLink</a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Service</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#donate" class="navbar-link" data-nav-link>
+              <span>Donate</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#event" class="navbar-link" data-nav-link>
+              <span>Event</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navbar-link" data-nav-link>
+              <span>Contact</span>
+
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-action">
+
+       
+
+        <form action="donation.html" method="get">
+          <button class="btn btn-primary" type="submit" style="display: flex; align-items: center;">
+            <span>Donation</span>
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
+
+            <span>Welcome to CareLink</span>
+          </p>
+
+          <h2 class="h1 hero-title">
+            Extend a Hand, <strong>Change a Life</strong>
+          </h2>
+
+          <p class="hero-text">
+            a platform dedicated to connecting compassionate individuals with those in need, 
+            including people and animals. From disaster relief and hunger alleviation to poverty support and animal welfare, 
+            we aim to make giving simple and impactful. Together, we can extend a hand and change lives—human and animal alike.
+          </p>
+
+          <form action="donation.html" method="get">
+            <button class="btn btn-primary" type="submit" style="display: flex; align-items: center;">
+              <span>Donation</span>
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features">
+        <div class="container">
+
+          <ul class="features-list">
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="flame-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Disaster Relief</h3>
+
+                <p class="item-text">
+                  Provide immediate assistance to communities 
+                  affected by natural disasters.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Education</h3>
+
+                <p class="item-text">
+                  Support resources for schools, scholarships, 
+                  and vocational training to empower individuals.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="paw-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Animal Welfare</h3>
+
+                <p class="item-text">
+                  Help rescue, shelter, and provide 
+                  medical care for animals in need.
+                </p>
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="item-icon">
+                <ion-icon name="leaf-outline"></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="h4 item-title">Environment</h3>
+
+                <p class="item-text">
+                  Fund projects for tree planting, wildlife conservation, 
+                  and pollution reduction to protect our planet.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+
+            <h2 class="deco-title">About Us</h2>
+
+            <img src="./assets/images/deco-img.png" width="58" height="261" alt="" class="deco-img">
+
+            <div class="banner-row">
+
+              <div class="banner-col">
+                <img src="./assets/images/dr.jpg"  width="315" height="380" loading="lazy" alt="Tiger"
+                  class="about-img w-100">
+
+                <img src="./assets/images/edu.jpg" width="386" height="250" loading="lazy" alt="Panda"
+                  class="about-img about-img-2 w-100">
+              </div>
+
+              <div class="banner-col">
+                <img src="./assets/images/an.jpg" width="250" height="277" loading="lazy" alt="Elephant"
+                  class="about-img about-img-3 w-100">
+
+                <img src="./assets/images/en.jpg" width="315" height="380" loading="lazy" alt="Deer"
+                  class="about-img w-100">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="about-content">
+            <p class="section-subtitle">
+              <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+              <span>Why Choose Us</span>
+            </p>
+          
+            <h2 class="h2 section-title">
+              Together, We Reach to <strong>Make a Change</strong>
+            </h2>
+          
+            <ul class="tab-nav">
+              <li>
+                <button class="tab-btn active" data-target="mission">Our Mission</button>
+              </li>
+              <li>
+                <button class="tab-btn" data-target="vision">Our Vision</button>
+              </li>
+              <li>
+                <button class="tab-btn" data-target="next-plan">Next Plan</button>
+              </li>
+            </ul>
+          
+            <div class="tab-content">
+              <div class="tab-item mission active">
+                <p class="section-text">
+                  Our mission is to connect compassionate individuals with those in need—whether people, animals, or the environment. Through CareLink, we aim to simplify the act of giving and create a more caring world by providing a platform that supports disaster relief, hunger alleviation, animal welfare, and environmental sustainability.
+                </p>
+                <br>
+              </div>
+              <div class="tab-item vision">
+                <p class="section-text">
+                  Our vision is a world where kindness and generosity flow freely, where every individual and creature in need receives the support they deserve. By fostering a global community of donors and advocates, CareLink strives to be a driving force in creating a better tomorrow for both humanity and the planet.
+                </p>
+                <br>
+              </div>
+              <div class="tab-item next-plan">
+                <p class="section-text">
+                  CareLink will enhance our platform with new features for tracking donations, showcasing success stories, and improving transparency. Additionally, we aim to raise awareness of our platform through targeted campaigns, focusing on key areas like climate change, disaster recovery, and animal protection.
+                </p>
+                <br>
+                <div>
+              </div>
+            </div>
+          
+            <button class="btn btn-secondary">
+              <span>Learn More of Us</span>
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+          
+          
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta">
+        <div class="container">
+
+          <div class="cta-content">
+            <h2 class="h2 section-title">+1,532 People Donated!</h2>
+
+            <form action="donation.html" method="get">
+              <button class="btn btn-outline" type="submit" style="display: flex; align-items: center;">
+                <span>Become a Donator!</span>
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+
+          <figure class="cta-banner">
+            <img src="./assets/images/don.jpg" width="520" height="150" loading="lazy" alt="Fox"
+              class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" style="background-image: url('./assets/images/service-map.png')">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>What We Do</span>
+          </p>
+
+          <h2 class="h2 section-title">
+            Together, through these efforts,<strong> we strive to create a better, more compassionate world for people, animals, and the planet.</strong>
+          </h2>
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>What You Can Do</span>
+          </p>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Choose Your Cause</h3>
+
+                <p class="card-text">
+                  Select the area you're passionate about
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="flower-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Make Your Donation</h3>
+
+                <p class="card-text">
+                  Contribute because every donation makes a difference!
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="earth-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">See the Impact</h3>
+
+                <p class="card-text">
+                  Watch how your support changes lives
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Spread the Word</h3>
+
+                <p class="card-text">
+                  Share your contribution and inspire others to give
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DONATE
+      -->
+
+      <section class="section donate" id="donate">
+        <div class="container">
+
+          <ul class="donate-list">
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/kan.jpg" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="23400">PHP23,400</data>
+                    </p>
+
+                    <data class="progress-value" value="78">78%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Support Relief Efforts for Victims of Kanlaon’s Eruption</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="30000">PHP3000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="6600">PHP6,600</data>
+                    </p>
+
+                  </div>
+
+                  <form action="donation.html" method="get">
+                    <button class="btn btn-secondary" type="submit" style="display: flex; align-items: center;">
+                      <span>Donation</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </form>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/typhoon.jpg" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Raised</span>
+
+                      <data value="13800">PHP13,800</data>
+                    </p>
+
+                    <data class="progress-value" value="46">46%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Provide Relief for the Victims of Typhoon Querubin in Davao</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="30000">$30000</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="16200">PHP16,200</data>
+                    </p>
+
+                  </div>
+
+                  <form action="donation.html" method="get">
+                    <button class="btn btn-secondary" type="submit" style="display: flex; align-items: center;">
+                      <span>Donation</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </form>
+
+                </div>
+
+              </div>
+            </li>
+
+        </section>
+
+      <section id="donation-progress" style="padding-top: 5px; padding-right: 100px; padding-left: 100px; padding-bottom: 50px;font-family: Arial, sans-serif;">
+        <h2>Donation Progress</h2>
+        <p>See how close we are to reaching our goals and making a difference:</p> <br>
+        
+        <!-- Education Progress -->
+        <div>
+          <h3>📚 Education</h3>
+          <div style="background-color: #e0e0e0; border-radius: 8px; width: 100%; height: 20px; position: relative; overflow: hidden;">
+            <div style="background-color: #4caf50; height: 100%; width: 40%;"></div>
+          </div>
+          <p>Raised: 200 school supplies | Goal: 500 | To Go: 300</p>
+        </div>
+      
+        <!-- Environment Progress -->
+        <div>
+          <h3>🌱 Environment</h3>
+          <div style="background-color: #e0e0e0; border-radius: 8px; width: 100%; height: 20px; position: relative; overflow: hidden;">
+            <div style="background-color: #2196F3; height: 100%; width: 33%;"></div>
+          </div>
+          <p>Raised: PHP 1,000 | Goal: PHP 3,000 | To Go: PHP 2,000</p>
+        </div>
+      
+        <!-- Disaster Relief Progress -->
+        <div>
+          <h3>🚑 Disaster Relief</h3>
+          <div style="background-color: #e0e0e0; border-radius: 8px; width: 100%; height: 20px; position: relative; overflow: hidden;">
+            <div style="background-color: #ff9800; height: 100%; width: 50%;"></div>
+          </div>
+          <p>Raised: PHP 2,500 | Goal: PHP 5,000 | To Go: PHP 2,500</p>
+        </div>
+      
+        <!-- Animal Welfare Progress -->
+        <div>
+          <h3>🐾 Animal Welfare</h3>
+          <div style="background-color: #e0e0e0; border-radius: 8px; width: 100%; height: 20px; position: relative; overflow: hidden;">
+            <div style="background-color: #f44336; height: 100%; width: 30%;"></div>
+          </div>
+          <p>Raised: 300 lbs of food | Goal: 1,000 lbs | To Go: 700 lbs</p>
+        </div>
+      </section>
+      <br>
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="testi">
+
+        <div class="testi-content">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>Our Testimonials</span>
+          </p>
+
+          <h2 class="h2 section-title">
+            What People Say About <strong>Our Organization</strong>
+          </h2>
+
+          <div class="testi-card">
+
+            <figure class="card-avatar">
+              <img src="./assets/images/☆ ⊹_・゜.jpg" width="60" height="60" loading="lazy" alt="David S. Neuman">
+            </figure>
+
+            <div>
+              <blockquote class="testi-text">
+                "I am incredibly proud to support Care Link and its impactful donation drive. The organization has shown unwavering dedication to helping those in need, and their efforts truly make a difference in the community. From providing essential supplies to offering emotional support, Care Link is a lifeline for many. The donation drive is not just about collecting goods—it's about fostering a sense of compassion and solidarity among individuals who care about making a real difference in people's lives. The transparency, care, and organization behind each campaign ensure that every contribution goes directly to those who need it most. I'm honored to be part of such a positive initiative and highly recommend getting involved to anyone looking to give back."
+              </blockquote>
+
+              <h3 class="testi-name">Mark Lee</h3>
+
+              <p class="testi-title">An NCTzen</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <figure class="testi-banner">
+          <img src="./assets/images/mark.jpg" width="960" height="846" loading="lazy" alt="Rhinoceros"
+            class="img-cover">
+        </figure>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PARTNER
+      -->
+
+      <section class="section partner">
+        <div class="container">
+
+          <a href="#" class="partner-logo">
+            <img src="./assets/images/partner-1.png" width="157" height="55" loading="lazy" alt="Children Fund"
+              class="gray">
+
+            <img src="./assets/images/partner-1-active.png" width="157" height="55" loading="lazy" alt="Children Fund"
+              class="color">
+          </a>
+
+          <a href="#" class="partner-logo">
+            <img src="./assets/images/partner-2.png" width="163" height="55" loading="lazy" alt="Non Profit Agency"
+              class="gray">
+
+            <img src="./assets/images/partner-2-active.png" width="163" height="55" loading="lazy"
+              alt="Non Profit Agency" class="color">
+          </a>
+
+          <a href="#" class="partner-logo">
+            <img src="./assets/images/partner-3.png" width="149" height="55" loading="lazy" alt="Rise Hand Help Us"
+              class="gray">
+
+            <img src="./assets/images/partner-3-active.png" width="149" height="55" loading="lazy"
+              alt="Rise Hand Help Us" class="color">
+          </a>
+
+          <a href="#" class="partner-logo">
+            <img src="./assets/images/partner-4.png" width="169" height="58" loading="lazy" alt="Helping" class="gray">
+
+            <img src="./assets/images/partner-4-active.png" width="169" height="58" loading="lazy" alt="Helping"
+              class="color">
+          </a>
+
+          <a href="#" class="partner-logo">
+            <img src="./assets/images/partner-5.png" width="211" height="55" loading="lazy" alt="Poor Fund Organization"
+              class="gray">
+
+            <img src="./assets/images/partner-5-active.png" width="211" height="55" loading="lazy"
+              alt="Poor Fund Organization" class="color">
+          </a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <section class="section event" id="event">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>Event & Program</span>
+
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+          </p>
+
+          <h2 class="h2 section-title">
+            Our Most Popular Causes For <strong>Building Fund</strong>
+          </h2>
+
+          <ul class="event-list">
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="12-20">
+                  <span class="month">Dec</span>
+
+                  <span class="date">20</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">Education</p>
+
+                    <h3 class="card-title">Christmas School Supplies Drive</h3>
+
+                    <p class="card-text">
+                      Collecting school supplies to give children in need a fresh start for the New Year.
+                    </p>
+                  </div>
+
+                  <button class="btn btn-white">
+                    <span>View Events</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="12-29">
+                  <span class="month">Dec</span>
+
+                  <span class="date">29</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">Environment</p>
+
+                    <h3 class="card-title">Green Christmas Campaign</h3>
+
+                    <p class="card-text">
+                      Fundraising for environmental initiatives during the holiday season, including tree planting and sustainable practices
+                    </p>
+                  </div>
+
+                  <button class="btn btn-white">
+                    <span>View Events</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <time class="card-time" datetime="01-02">
+                  <span class="month">Jan</span>
+
+                  <span class="date">02</span>
+                </time>
+
+                <div class="wrapper">
+
+                  <div class="card-content">
+                    <p class="card-subtitle">Animal Welfare</p>
+
+                    <h3 class="card-title">Holiday Food Drive for Animals</h3>
+
+                    <p class="card-text">
+                      Donate pet food and supplies to help provide nourishment for stray animals in need to ensure they stay healthy and well-fed.
+                    </p>
+                  </div>
+
+                  <button class="btn btn-white">
+                    <span>View Events</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #INSTA POST
+      -->
+
+      <section class="insta-post">
+
+        <ul class="insta-post-list">
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/1.1.jpg" width="320" height="300" loading="lazy" alt="Lion"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/6.1.jpg" width="320" height="300" loading="lazy" alt="Deer"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/4.png" width="320" height="300" loading="lazy" alt="Wild Bear"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/3.jpg" width="320" height="300" loading="lazy" alt="Deer"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/4.png" width="320" height="300" loading="lazy" alt="Horses"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li>
+          <a href="#" class="footer-link">Terms of use</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy & Policy</a>
+        </li>
+
+      </ul>
+
+      <p class="copyright">
+        CIT 224. <a href="#" class="copyright-link"> GONZALES and TRIBUNSAY (BSIT 4-B)</a>. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

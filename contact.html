@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; background-color: #f9f9f9; }
+    .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    h1 { text-align: center; color: #4caf50; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    input, textarea { 
+      width: 100%; 
+      padding: 10px; 
+      border: 1px solid #ddd; 
+      border-radius: 5px; 
+      font-size: 14px; 
+    }
+    .form-group input { margin-bottom: 10px; }
+    .cancel-btn, .send-btn { 
+      display: inline-block;
+      text-decoration: none; /* Remove underline */
+      padding: 10px 20px; 
+      font-size: 16px; 
+      border-radius: 5px; 
+      text-align: center; 
+      color: white; 
+      width: 45%;
+      margin-right: 10px; /* Add space between buttons */
+    }
+    .cancel-btn { background-color: #af4c4c; }
+    .send-btn { background-color: #4caf50; }
+    .cancel-btn:hover { background-color: #9e3e3e; }
+    .send-btn:hover { background-color: #45a049; }
+    /* Success Modal */
+    .success-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 300px;
+    }
+    .success-modal button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .success-modal button:hover {
+      background-color: #45a049;
+    }
+    .button-group {
+      display: flex;
+      justify-content: space-between; /* This will align the buttons next to each other */
+    }
+  </style>
+</head>
+<body>
+  <div class="container" style="padding-left: 30px; padding-right: 50px;">
+    <h1>Contact Us</h1>
+    <form action="https://www.example.com/process-contact" method="POST">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message here" required></textarea>
+      </div>
+      <div class="form-group button-group">
+        <a href="index.html" class="cancel-btn">Cancel</a>
+        <a href="#" class="send-btn" onclick="showSuccessModal()">Send Message</a>
+      </div>
+    </form>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="success-modal" id="successModal">
+    <h3>Message Sent Successfully!</h3>
+    <p>Your message has been successfully sent. Thank you for reaching out to us.</p>
+    <button onclick="window.location.href='index.html'">Return Home</button>
+  </div>
+
+  <script>
+    // Function to show success modal
+    function showSuccessModal() {
+      // Show the success modal
+      document.getElementById('successModal').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
