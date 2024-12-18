@@ -27,9 +27,6 @@ ORIGINAL  PROJECT BY: codewithsadee
 
 <br />
 
-### Demo Screeshots
-
-![Wildvine Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
 ### Prerequisites
 
